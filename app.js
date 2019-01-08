@@ -15,17 +15,8 @@ scores = [0, 0];
 roundScore = 0;
 activePlayer = 0;
 dice = Math.floor(Math.random() * 6) + 1;
-console.log(dice);
-
-//document.querySelector('#current-'+activePlayer).textContent = dice;
-//document.querySelector('#current-'+activePlayer).innerHTML= '<b>'+dice+'</b>'
-
-//var x = document.querySelector('#score-0').textContent;
-//console.log(x);
 
 document.querySelector('.dice').style.display = 'none';
-
-//document.querySelector('.dice').
 
 document.getElementById('score-0').textContent = 0; //jesli mamy id mozemy zastapic querySelector
 document.getElementById('score-1').textContent = 0;
@@ -67,6 +58,6 @@ function nextPlayer() {
 
     document.querySelector('.player-0-panel').classList.toggle('active'); //klasy wybieramy przez querySelector
     document.querySelector('.player-1-panel').classList.toggle('active');
-
+    
     document.querySelector('.dice').style.display = 'none';
 }
